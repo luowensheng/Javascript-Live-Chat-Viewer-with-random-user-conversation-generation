@@ -5,9 +5,10 @@
 
 1. ## *User generation*
     1. Generate a list of users by randomly generating names from a names dataset
-    2. Each user has a first and last name, a gender and an ID 
-    3. A converstion dataset is used to assign each user to a conversation
-    4. the  [random user api](https://randomuser.me/api) is used to assign each user a profile picture
+    1. Each user has a first and last name, a gender and an ID 
+    1. A converstion dataset is used to assign each user to a conversation
+    1. the  [random user api](https://randomuser.me/api) is used to assign each user a profile picture
+
 
 ### Usage
 ```javascript
@@ -32,10 +33,11 @@ function getRandomPerson(){
 ```
 
 2. ## *Frontend*
-1. Vanilla js used to create all the html components
-1. Css is used to animate the background image
-1. A request is sent at a random time to the server for a new message
-1. Upon receiving the new message, the contents are used to create a chat item which would be placed on the screen
+   1. Vanilla js used to create all the html components
+   1. Css is used to animate the background image
+   1. A request is sent at a random time to the server for a new message
+   1. Upon receiving the new message, the contents are used to create a chat item which would be placed on the screen
+   
 ### Usage
 ```javascript
 function createChatItem(parent, data){
@@ -59,10 +61,9 @@ function createChatItem(parent, data){
 
 3. ## *Backend*
 
-1. Express js is used
-1. Using the generated data, a dataset is constructor
-1. A generator is used to generate 1 item for every get request from the frontend client.
-2. 
+   1. Express js is used
+   2. Using the generated data, a dataset is constructor
+   3. A generator is used to generate 1 item for every get request from the frontend client.
    ``` javascript
    function *getNextMessage(){
     const dataset = generateDataset(100)
