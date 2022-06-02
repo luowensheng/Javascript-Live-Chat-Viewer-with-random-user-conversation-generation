@@ -1,0 +1,172 @@
+
+html {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  background-image: url("https://wallpapercave.com/wp/wp8063327.jpg");
+  animation-name: background_anim;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+@keyframes background_anim {
+     0% {
+     }
+     3% {
+         transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+         background-position: top left;
+     }
+     66% {
+        transition: cubic-bezier(0.075, 0.82, 0.165, 0.165);
+        background-position: top right;
+     }
+
+     100% {
+        background-position: bottom right;
+
+     }
+}
+
+html:focus {
+  animation-play-state: paused;
+}
+
+.chat-item {
+   height: wrap;
+   display: flex;
+   flex-grow: 1;     /* do not grow   - initial value: 0 */
+   flex-shrink: 0;   /* do not shrink - initial value: 1 */
+   flex-basis: 25em; 
+   overflow-y: auto;
+   max-width: 300px;
+   box-shadow: 0.2px 0.2px 0px 0px rgb(62, 61, 61);
+   margin-bottom: 20px;
+   animation-name: entering;
+   animation-duration: 1s;
+   background-color: azure;
+   padding: 5px;   
+   border-radius: 5%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: 2px solid azure;
+   
+}
+
+@keyframes entering {
+    0% {
+        opacity: 0.5;
+        border-color: rgb(10, 5, 147);
+    }
+
+    15% {
+        border-color: azure;
+    }
+
+    30% {
+        opacity: 0.5;
+        border-color: rgb(10, 5, 147);
+    }
+
+    45% {
+        border-color: azure;
+    }
+    100% {
+        opacity: 1;
+        /* flex-grow: 1; */
+    }
+}
+
+
+.person-img {
+    height: 35px;
+    width: 35px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50%;
+    max-width: 35px;
+    /* transition: width 2s ease-in, max-width 2s ease-in, height 2s ease-in; */
+
+}
+
+.message-date {
+    text-align: center;
+    color: gray;
+    width: 70%;
+    padding-left: 8px;
+    padding-top: 20px;
+    font-size: 6pt;
+    max-width: 80px;
+}
+
+.person-name {
+    font-weight: bold;
+    font-size: 8pt;
+    width: 150px;
+    max-width: 80px;
+    /* transition: font-size 1s; */
+}
+
+
+.chat-text {
+    margin-left: 10px;
+    width: 100%;
+    padding-right: 30px;
+}
+
+
+.message {
+    color: rgb(126, 123, 123);
+    font-size: 8pt;
+    overflow: auto;
+    /* max-width: 300px; */
+    /* height: 100px; */
+}
+
+
+.phone {
+    background-color:white;
+    border: 7px solid black;
+    position: absolute;
+    width: 400px;
+    height: 640px;
+    left: 40%;
+    border-radius: 5%;
+    overflow: hidden;
+
+}
+
+
+
+.top-phone{
+    width: 100%;
+    height: 20%;
+    background-color:rgb(225, 242, 248);
+}
+
+.top-phone h1{
+    color:rgb(59, 59, 201);
+    background-color: inherit;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.bottom-phone {
+    width: 100%;
+    height: 80%;
+    background-color:rgb(236, 235, 251);
+}
+.phone-screen {
+    background-color:white;
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+    overflow-x: clip;
+}
+.bottom-phone textarea {
+    resize: vertical;
+    /* width: 100%; */
+    width: 375px;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color:white; 
+    overflow-wrap: break-word;
+    margin-left: 10px;
+    margin-right: 40px;
+    color:black;
+
+}
