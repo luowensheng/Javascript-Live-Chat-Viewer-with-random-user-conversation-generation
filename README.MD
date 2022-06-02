@@ -1,4 +1,5 @@
-# Live Chat Viewer
+# Live Chat Viewer with random user conversation generation
+
 
 
 ![Live Chat Viewer](https://github.com/luowensheng/Javascript-Live-Chat-Viewer-with-random-user-conversation-generation/blob/master/outputs/screen2.PNG)
