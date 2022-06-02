@@ -1,7 +1,7 @@
 # Live Chat Viewer
 
 
-![Live Chat Viewer](https://github.com/luowensheng/Javascript-Live-Chat-Viewer-with-random-user-conversation-generation/blob/master/outputs/screen.PNG)
+![Live Chat Viewer](https://github.com/luowensheng/Javascript-Live-Chat-Viewer-with-random-user-conversation-generation/blob/master/outputs/screen2.PNG)
 
 1. ## *User generation*
     1. Generate a list of users by randomly generating names from a names dataset
