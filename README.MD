@@ -1,9 +1,9 @@
 # Live Chat Viewer
 
 
+![Live Chat Viewer](https://github.com/luowensheng/Javascript-Live-Chat-Viewer-with-random-user-conversation-generation/blob/master/outputs/screen.PNG)
 
-
-1. *User generation*
+1. ## *User generation*
     1. Generate a list of users by randomly generating names from a names dataset
     2. Each user has a first and last name, a gender and an ID 
     3. A converstion dataset is used to assign each user to a conversation
@@ -31,7 +31,7 @@ function getRandomPerson(){
 }
 ```
 
-2. *Frontend*
+2. ## *Frontend*
 1. Vanilla js used to create all the html components
 1. Css is used to animate the background image
 1. A request is sent at a random time to the server for a new message
@@ -57,7 +57,7 @@ function createChatItem(parent, data){
 }
 ```
 
-3. *Backend*
+3. ## *Backend*
 
 1. Express js is used
 1. Using the generated data, a dataset is constructor
